@@ -1,0 +1,80 @@
+/*Foundation*/
+
+:root{
+    box-sizing: border-box;
+}
+
+*, ::after, ::before{
+    box-sizing: inherit;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+/*Generic Rules*/
+
+body{
+    background-color: #bbb;
+    font-family: Arial, sans-serif;
+}
+
+header,
+footer{
+    background-color: #0072b0;
+    color: white;
+    padding: .5em 1.5em;
+}
+footer{
+    font-size: x-large;
+}
+
+main{
+    background-color: #fff;
+    padding: 0 1.5em 1.5em 1.5em;
+}
+
+header,
+footer,
+main,
+article{
+    border-radius: .5em;
+}
+
+article h3{
+    margin: 0;
+}
+
+/*layout*/
+
+/*double container pattern*/
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+article{
+    float: left;
+    width: 50%;
+}
+
+/*clear fix*/
+
+section::after{
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+/*article*/
+
+article{
+    background-color: #a4a4a4;
+    padding: 1.5em;
+}
+
+main section div article:first-child{
+    margin-top: 1.5em;
+}
+
